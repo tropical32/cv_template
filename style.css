@@ -1,0 +1,184 @@
+body {
+    display: flex;
+    margin: 0;
+    width: 210mm;
+    height: 297mm;
+    font-family: Poppins, 'Segoe UI', Tahoma, sans-serif;
+}
+
+.face {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.website {
+    color: #065f46;
+    font-weight: 700;
+}
+
+.container {
+    width: 210mm;
+    height: 297mm;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.address, .date {
+    color: #a3a3a3;
+}
+
+.skills {
+    text-align: justify;
+}
+
+.job-section {
+    margin-bottom: 2rem;
+    page-break-inside: avoid;
+}
+
+.education {
+    page-break-inside: avoid;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.container > .left {
+    padding: 1.25rem;
+    padding-top: 3rem;
+    color: white;
+    background-color: #064e3b;
+}
+
+.right > :last-child {
+    margin-bottom: 0;
+}
+
+.container > .right {
+    padding: 1.25rem;
+    padding-top: 3rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.left-title {
+    color: #d1fae5;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.right-section {
+    margin-bottom: 3rem;
+}
+
+.right-title {
+    color: #16a34a;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.job-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.company {
+    font-size: 1rem;
+}
+
+hr {
+    border: 1px solid #064e3b;
+    width: 5rem;
+    margin-left: 0;
+    margin-top: 2rem;
+}
+
+.languages-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+    column-gap: 0.25rem;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    row-gap: 0.5rem;
+    column-gap: 0.25rem;
+}
+
+.logo {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: white;
+    fill: #fff;
+    filter: invert(1);
+}
+
+a {
+    color: white;
+    text-decoration: unset;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+    }
+
+    /* Optional: Reset margin and padding for other elements */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 15mm 20mm 15mm 20mm;
+    }
+}
+@media print {
+    .page-break {
+        page-break-before: always;
+    }
+
+    .no-page-break {
+        page-break-inside: avoid;
+    }
+}
+
+@media print {
+    body {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+}
